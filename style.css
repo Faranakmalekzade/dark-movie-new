@@ -394,11 +394,33 @@ header:before {
 /**trailer**/
 /**********/
 .trailer {
-  height: 60vh;
+  min-height: 500px;
   background-color: #2a2a39;
   position: relative;
+  display: flex;
+  justify-content: space-around;
 }
-.groups-row {
+
+.trailer-box {
+  max-width: 400px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.trailer-box h2 {
+  margin: 0;
+  direction: rtl;
+  color: #eee;
+  margin-bottom: 10px;
+}
+
+.trailer-film {
+  width: 400px;
+  height: 315px;
+  background: red;
+}
+
+/* .groups-row {
   width: 60%;
   margin: 0 auto;
   display: flex;
@@ -438,7 +460,7 @@ header:before {
 .group-film ul {
   list-style: none;
   padding: 0 20px;
-}
+} */
 
 /***********/
 /**third-svd**/
@@ -467,4 +489,31 @@ header:before {
 
 .custom-shape-divider-top-1664483085 .shape-fill {
   fill: #2a2a39;
+}
+
+/* // XX-Large devices (larger desktops, 1400px and down) */
+@media (max-width: 1400px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and down) */
+@media (max-width: 1200px) {
+}
+
+/* // Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  .trailer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* // Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+}
+
+/* // Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+  /* 0-576 */
 }
